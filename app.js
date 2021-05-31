@@ -1,6 +1,6 @@
 'use strict';
 
-let sArr=['6:00AM','7:00AM','8:00AM','9:00AM','10:00AM','11:00AM','12:00PM','1:00PM','2:00PM','3:00PM','4:00PM','5:00PM','6:00PM','7:00PM'];
+let operationHours=['6:00AM','7:00AM','8:00AM','9:00AM','10:00AM','11:00AM','12:00PM','1:00PM','2:00PM','3:00PM','4:00PM','5:00PM','6:00PM','7:00PM'];
 
 let cont =document.getElementById('container');
 
@@ -22,33 +22,34 @@ cookieHour : [],
 total:0,
 
 calRandomNumberCus : function(){
-    for (let i=0; i<sArr.length ;i++){
+    for (let i=0; i< operationHours.length ;i++){
 this.customerHour.push(randomValue(this.minHourlyCustomers,this.maxHourlyCustomers));
     }
     },
 calcRandomNumCookie : function(){
-for(let i =0 ; i <sArr.length;i++){
-this.cookieHour.push((this.customerHour[i] * math.ceil(this.avgCookie))
+for(let i =0 ; i < operationHours.length;i++){
+this.cookieHour.push((this.customerHour[i]) * Math.ceil(this.avgCookie))
 }
 },
 
 render:function(){
     let locationN = document.createElement('h2');
-    continue.appendchild (locationN);
-    locationN.textContent = this.locationN;
+    cont.appendChild(locationN);
+    locationN.textContent = this.locationName;
 
 let unOrderlist=document.createElement('ul');
-cont.appendchild(unorderlist);
+cont.appendChild(unOrderlist);
 
-for (let i = 0 ; i < this.cookieHour.length;i++){
-let listItems =document.createElemet('li');
-unOrderList.appendchild(listItems);
-listItems.textContent ='$() this.cookieHour[i];
+for (let i = 0 ; i < this.operationHours.length;i++){
+let listItems =document.createElement('li');
+unOrderlist.appendChild(listItems);
+listItems.textContent = '$(operationHours[i]} : ${this.cookieHour[i]
 
+} cookies';
 }
-
 }
 };
+
 Seattle.calRandomNumberCus();
 Seattle.calcRandomNumCookie();
 Seattle.render();

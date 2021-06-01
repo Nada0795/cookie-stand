@@ -1,0 +1,30 @@
+body{
+
+    background-color: #afb9c8;
+}
+
+
+img{
+height: 200px;
+margin-left: 350px ;
+}
+
+ul li {
+    
+    font-family: 'Limelight', cursive;
+    font-size: large; 
+background-color: #b6c9f0;
+}
+    
+
+
+    h1 {
+        font-family: 'Limelight', cursive;
+        font-size: 60px;
+        background-color: #f6b8b8;
+    }
+
+    h2 {
+        font-family: 'Limelight', cursive;
+        background-color: #0a81ab;
+    }

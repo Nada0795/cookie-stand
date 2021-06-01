@@ -30,4 +30,13 @@ background-color: #b6c9f0;
     }
 
 
+    table{
+        border-collapse: collapse;
+    }
+
+    td ,th {
+        border:solid black 1px;
+    }
+
+
    

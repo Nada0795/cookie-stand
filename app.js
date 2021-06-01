@@ -8,6 +8,7 @@ function randomValue(min, max) {
 }
 
 
+
 let cont = document.getElementById('container');
 let table = document.createElement('table');
 cont.appendChild(table);
@@ -182,3 +183,66 @@ function Combine(locationName, minHourlyCustomers, maxHourlyCustomers, avgCookie
     // Lima.render();
     // Lima.calRandomNumberCus();
     // Lima.calcRandomNumCookie ();
+=======
+                // let cookieHour = [];
+                // let customerHour = [];
+                function Combine (locationName,minHourlyCustomers,maxHourlyCustomers,avgCookie,customerHour,cookieHour){
+                this.locationName = locationName;
+                this.minHourlyCustomers = minHourlyCustomers;
+                this.maxHourlyCustomers = maxHourlyCustomers;
+                this.avgCookie = avgCookie;
+                this.customerHour= customerHour;
+                this.cookieHour= cookieHour;
+
+                // customerHour.push(this);
+                // cookieHour.push(this);
+            
+
+                // console.log(this)
+            }
+
+            // Prototype
+
+            Combine.prototype.calRandomNumberCus = function(){
+
+                for (let i=0; i< operationHours.length ;i++){
+                            this.customerHour.push(randomValue(this.minHourlyCustomers,this.maxHourlyCustomers));
+
+            }
+        }
+
+
+
+        Combine.prototype.calcRandomNumCookie = function(){
+            for(let i =0 ; i < operationHours.length;i++){
+                        this.cookieHour.push(this.customerHour[i] * Math.ceil(this.avgCookie));
+                        this.total = this.total + this.cookieHour[i];
+                        }
+
+
+        }
+        Combine.prototype.render = function(){
+
+            let locationName = document.createElement('h2');
+                    cont.appendChild(locationName);
+                    locationName.textContent = this.locationName;
+                
+                
+                let unOrderlist=document.createElement('ul');
+                cont.appendChild(unOrderlist);
+                
+                for (let i = 0 ; i < operationHours.length; i++){
+                let listItems =document.createElement('li');
+                unOrderlist.appendChild(listItems);
+                listItems.textContent = `${operationHours[i]} : ${this.cookieHour[i]
+                 } cookies`;
+                 }
+                
+                let dailyTotal = document.createElement('li');
+                unOrderlist.appendChild(dailyTotal);
+                dailyTotal.textContent = `Total : ${this.total} cookies `;
+                Lima.calRandomNumberCus();
+                Lima.calcRandomNumCookie ();
+                Lima.render();
+
+

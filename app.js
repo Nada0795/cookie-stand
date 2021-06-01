@@ -66,51 +66,7 @@ function randomValue(min, max) {
                 let dailyTotal = document.createElement('li');
                 unOrderlist.appendChild(dailyTotal);
                 dailyTotal.textContent = `Total : ${this.total} cookies `;
-
-        }
-
-
-              
-                // instances
-
-                let Seattle = new Combine ('Seattle',23,65,6.3);
-                let Tokyo = new Combine ('Tokyo',3,24,1.2);
-                let Dubai = new Combine ('Dubai',11,38,3.7);
-                let Paris = new Combine ('Paris',20,38,2.3);
-                let Lima = new Combine ('Lima',2,16,4.6);
-
-
-                Seattle.calRandomNumberCus();
-                Seattle.calcRandomNumCookie ();
-                Seattle.render();
-
-                Tokyo.calRandomNumberCus();
-                Tokyo.calcRandomNumCookie ();
-                Tokyo.render();
-
-            
-                Dubai.calRandomNumberCus();
-                Dubai.calcRandomNumCookie ();
-                Dubai.render();
-
-             
-                Paris.calRandomNumberCus();
-                Paris.calcRandomNumCookie ();
-                Paris.render();
-
-
                 Lima.calRandomNumberCus();
                 Lima.calcRandomNumCookie ();
                 Lima.render();
 
-               
-
-               
-                
-
-
-
-
-
-
-              

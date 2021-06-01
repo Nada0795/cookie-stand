@@ -28,3 +28,12 @@ background-color: #b6c9f0;
         font-family: 'Limelight', cursive;
         background-color: #0a81ab;
     }
+
+
+    table{
+        border-collapse: collapse;
+    }
+
+    td ,th {
+        border:solid black 1px;
+    }

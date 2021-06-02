@@ -11,7 +11,7 @@ function randomValue(min, max) {
 
 let cont = document.getElementById('container');
 let table = document.createElement('table');
-cont.appendChild(table);
+// cont.appendChild(table);
 
 let arrOfObjects = [];
 function Combine(locationName, minHourlyCustomers, maxHourlyCustomers, avgCookie) {
@@ -88,30 +88,6 @@ function Combine(locationName, minHourlyCustomers, maxHourlyCustomers, avgCookie
         lastCell.textContent = this.total;
 
     }
-    //     let locationName = document.createElement('h2');
-    //             cont.appendChild(locationName);
-    //             locationName.textContent = this.locationName;
-
-
-    //         let unOrderlist=document.createElement('ul');
-    //         cont.appendChild(unOrderlist);
-
-    //         for (let i = 0 ; i < operationHours.length; i++){
-    //         let listItems =document.createElement('li');
-    //         unOrderlist.appendChild(listItems);
-    //         listItems.textContent = `${operationHours[i]} : ${this.cookieHour[i]
-    //          } cookies`;
-    //          }
-
-    //         let dailyTotal = document.createElement('li');
-    //         unOrderlist.appendChild(dailyTotal);
-    //         dailyTotal.textContent = `Total : ${this.total} cookies `;
-
-    // }
-
-
-
-
     // instances
 
     let Seattle = new Combine('Seattle', 23, 65, 6.3);
@@ -161,4 +137,45 @@ function Combine(locationName, minHourlyCustomers, maxHourlyCustomers, avgCookie
 
     footerRow();
 
-   
+
+
+
+
+
+
+   const salmon = document.getElementById('SalmonForm');
+   salmon.addEventListener('submit', sal1);
+
+function sal1(event){
+event.preventDefault();
+
+console.log(event);
+// console.log(event.target.locationName); 
+let salmon=event.target.LN.value;
+
+let newMin=Number(event.target.MHC.value);
+let newMax=Number(event.target.MHC2.value);
+let newAvg=Number(event.target.AC.value);
+
+let location1=new location(salmon,newMin,newMax,newAvg);
+console.log(location1)
+}
+
+if (Location1.Min.Num > Location1.Max.Num){
+
+    document.getElementById("SalmonForm").reset();
+    alert ("try again! Min.Num must be less than Max.Num");
+}
+
+table.removeChild(table.lastChild);
+
+Location1.calRandomNumberCus();
+Location1.calcRandomNumCookie();
+Location1.render();
+
+footer method ();
+document.getElementById("SalmonForm").reset();
+
+
+
+

@@ -13,7 +13,7 @@ ul li {
     
     font-family: 'Limelight', cursive;
     font-size: large; 
-background-color: #b6c9f0;
+/* background-color: #b6c9f0; */
 }
     
 
@@ -39,3 +39,17 @@ background-color: #b6c9f0;
         border:solid black 1px;
     }
 
+<<<<<<< HEAD
+
+   div ul li a {
+        display: inline-block;
+        padding: 20px;
+    }
+
+    section div img {
+        height: 100px;
+        margin-left: 350px ;
+
+    }
+=======
+>>>>>>> f9f3dda79789e45ede05ea7770f2ec331fe794ba

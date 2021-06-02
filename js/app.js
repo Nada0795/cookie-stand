@@ -162,6 +162,3 @@ function Combine(locationName, minHourlyCustomers, maxHourlyCustomers, avgCookie
     footerRow();
 
    
-
-
-            

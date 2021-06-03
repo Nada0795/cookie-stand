@@ -20,14 +20,19 @@ ul li {
 
     h1 {
         font-family: 'Limelight', cursive;
-        font-size: 60px;
+        font-size: 50px;
         background-color: #f6b8b8;
+        margin-top: 0;
+        text-align: center;
+        color: #bf1363;
     }
 
     h2 {
-        font-family: 'Limelight', cursive;
+        font-family: Arial, Helvetica, sans-serif;
         background-color: #0a81ab;
-
+        font-size: 30px;
+        color: wheat;
+        /* text-align: center; */
     }
 
 
@@ -40,9 +45,14 @@ ul li {
     }
 
 
-   div ul li a {
+   ul li a {
         display: inline-block;
-        padding: 20px;
+        padding: 30px;
+        text-decoration: none;
+        color: #bf1363;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        
     }
 
     section div img {
@@ -50,3 +60,34 @@ ul li {
         margin-left: 350px ;
 
     }
+
+    .links1 ul li{
+        display: inline;
+        color: crimson;
+        margin-left: 150px;
+font-size: 23px;
+
+    }
+
+    footer {
+        text-align: center;
+        margin: 40px;
+        font-size: x-large;
+        color: red;"
+    }
+
+    .links2 > ul li {
+
+        padding: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        color: #bf1363;
+        display: inline-block;
+    }
+
+    strong{
+        color: wheat;
+        font-size: 25px;
+    }
+
+  

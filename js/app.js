@@ -177,6 +177,3 @@ Location1.render();
 footerRow ();
 document.getElementById("SalmonForm").reset();
 
-
-
-

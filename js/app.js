@@ -143,23 +143,25 @@ function Combine(locationName, minHourlyCustomers, maxHourlyCustomers, avgCookie
 
 
 
-   const salmon = document.getElementById('SalmonForm');
-   salmon.addEventListener('submit', sal1);
+const salmon = document.getElementById('SalmonForm');
+ salmon.addEventListener('submit', sal1);
+
+
 
 function sal1(event){
 event.preventDefault();
 
 console.log(event);
-// console.log(event.target.locationName); 
+// console.log(event.target.LN); 
 let salmon=event.target.LN.value;
 
 let newMin=Number(event.target.MHC.value);
 let newMax=Number(event.target.MHC2.value);
 let newAvg=Number(event.target.AC.value);
-
-let location1=new location(salmon,newMin,newMax,newAvg);
+let location1=new JS(salmon,newMin,newMax,newAvg);
 console.log(location1)
 }
+
 
 if (Location1.Min.Num > Location1.Max.Num){
 
@@ -172,8 +174,7 @@ table.removeChild(table.lastChild);
 Location1.calRandomNumberCus();
 Location1.calcRandomNumCookie();
 Location1.render();
-
-footer method ();
+footerRow ();
 document.getElementById("SalmonForm").reset();
 
 

@@ -1,5 +1,4 @@
 'use strict';
-
 let operationHours = ['6:00AM', '7:00AM', '8:00AM', '9:00AM', '10:00AM', '11:00AM', '12:00PM', '1:00PM', '2:00PM', '3:00PM', '4:00PM', '5:00PM', '6:00PM', '7:00PM'];
 
 function randomValue(min, max) {
@@ -11,7 +10,7 @@ function randomValue(min, max) {
 
 let cont = document.getElementById('container');
 let table = document.createElement('table');
-// cont.appendChild(table);
+cont.appendChild(table);
 
 let arrOfObjects = [];
 function Combine(locationName, minHourlyCustomers, maxHourlyCustomers, avgCookie) {
@@ -139,13 +138,8 @@ function Combine(locationName, minHourlyCustomers, maxHourlyCustomers, avgCookie
 
 
 
-
-
-
-
 const salmon = document.getElementById('SalmonForm');
  salmon.addEventListener('submit', sal1);
-
 
 
 function sal1(event){
@@ -158,9 +152,10 @@ let salmon=event.target.LN.value;
 let newMin=Number(event.target.MHC.value);
 let newMax=Number(event.target.MHC2.value);
 let newAvg=Number(event.target.AC.value);
-let location1=new JS(salmon,newMin,newMax,newAvg);
+let location1=new Combine(salmon,newMin,newMax,newAvg);
 console.log(location1)
 }
+
 
 
 if (Location1.Min.Num > Location1.Max.Num){

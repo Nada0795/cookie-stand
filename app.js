@@ -183,7 +183,6 @@ function Combine(locationName, minHourlyCustomers, maxHourlyCustomers, avgCookie
     // Lima.render();
     // Lima.calRandomNumberCus();
     // Lima.calcRandomNumCookie ();
-=======
                 // let cookieHour = [];
                 // let customerHour = [];
                 function Combine (locationName,minHourlyCustomers,maxHourlyCustomers,avgCookie,customerHour,cookieHour){
